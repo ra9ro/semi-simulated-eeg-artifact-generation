@@ -23,6 +23,33 @@ The artifact-removal methods subsequently applied to the semi-simulated data wer
 
 The original methodological references should also be cited when using these implementations.
 
+## Dataset organization after download
+
+The WEEG-ARTS dataset is distributed on Zenodo as multiple archives because of file-size constraints. After downloading the dataset, the archives should be extracted and their contents combined to reconstruct the original dataset structure before running the code.
+
+The resulting directory should have the following organization:
+
+```text
+WEEG-ARTS/
+├── dataset_description.json
+├── participants.json
+├── participants.tsv
+├── README.md
+├── sub-01/
+├── sub-02/
+├── ...
+├── sub-21/
+└── derivatives/
+    ├── manualAnnotations/
+    │   ├── sub-01/
+    │   ├── sub-02/
+    │   └── ...
+    └── semiSimulated/
+        ├── sub-01/
+        ├── sub-02/
+        └── ...
+```
+
 # Semi-Simulated EEG Data Generation
 
 ## Overview
